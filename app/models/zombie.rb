@@ -1,0 +1,2 @@
+class Zombie < ApplicationRecord
+end
