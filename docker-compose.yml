@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  api:
+    container_name: coding-challenge-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      API_DB_NAME: coding-challenge-api
+      API_DB_TEST_NAME: coding-challenge-api-test
+      API_DB_PASSWORD: M9S8TsR7z7SG6Y
+    ports:
+      - "3000:3000"
+    links:
+      - mysql
+    command: /bin/bash -c "sleep 25; rake db:drop db:create db:migrate && rails server -b 0.0.0.0"
+  mysql:
+    container_name: coding-challenge-mysql
+    build:
+      context: .
+      dockerfile: Dockerfile.mysql
+    environment:
+      MYSQL_DATABASE: coding-challenge-api
+      MYSQL_ROOT_PASSWORD: M9S8TsR7z7SG6Y
+    command: "--character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci "
