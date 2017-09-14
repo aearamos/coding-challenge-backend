@@ -20,5 +20,3 @@ ADD Gemfile /opt/coding-challenge-api
 ADD Gemfile.lock /opt/coding-challenge-api
 
 RUN bundle install -j 4
-
-ADD . /opt/coding-challenge-api

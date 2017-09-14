@@ -15,6 +15,8 @@ services:
       - "3000:3000"
     links:
       - mysql
+    volumes:
+      - ${PWD}:/opt/coding-challenge-api
     command: /bin/bash -c "sleep 25; rake db:drop db:create db:migrate && rails server -b 0.0.0.0"
   mysql:
     container_name: coding-challenge-mysql
