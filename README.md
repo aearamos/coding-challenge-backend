@@ -1,24 +1,39 @@
-# README
+# Badi Coding Challenge Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Instructions
 
-Things you may want to cover:
+* The challenge is submitted as pull request against this repo (fork it and create a PR). Feel free to include your ideas, issues, suggestions in your PR.
+* You are expected to build a performant, clean and well structured solution.
+* Do commit early and often. We'd like to check how do you keep the repo's history.
+* There is no single way of doing things, feel free to tackle the problem as you wish.
 
-* Ruby version
+## Requirements
 
-* System dependencies
+Create an API that allows the following operations:
 
-* Configuration
+1. Creating Zombies with related weapons and armors.
+2. Updating a Zombie's attributes, his weapons and armors.
+4. Searching Zombies by their attributes, weapons and armors.
+3. Destroying a Zombie.
+5. Make your API public. You can deploy it to AWS, Heroku, Digital Ocean...
 
-* Database creation
+Too easy? Great, we think so too!
+That's why we encourage candidates to go the extra mile and impress us in any way
+(related to the challenge).
 
-* Database initialization
+**Happy coding!**
 
-* How to run the test suite
+## Getting started
+Begin by forking this repo and cloning your fork.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Development
+We encourage you to use Docker, the project is ready to go.
+Run `docker-compose up -d && docker-compose logs -f` and your api will be up&running with hot code reloading on `http://localhost:3000`.
 
-* Deployment instructions
+In case you want to clean your environment, re-run:
 
-* ...
+```
+docker-compose down -f
+docker-compose up -d --build
+docker-compose logs -f
+```
