@@ -30,6 +30,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use Rspec as testing tool
   gem 'rspec-rails'
+  # Use Faker to create seeds or factories
+  gem 'faker', git: 'https://github.com/stympy/faker'
 end
 
 group :development do
