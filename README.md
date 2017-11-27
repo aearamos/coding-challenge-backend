@@ -46,4 +46,4 @@ docker-compose logs -f
 ### About Badi
 [Badi](https://www.crunchbase.com/organization/badi) is a startup based in Barcelona (Spain) which offers a two-sided marketplace for shared flats and roommates (mobile and web app). 
 Our goal is making city living affordable for everyone by unlocking available rooms inside crowded urban areas. How? By offering the best marketplace that intelligently matches verified profiles without intermediaries. 
-Do you want to join the tech team as a backend engineer? Accept our challenge and impress us :)
+Do you want to join our tech team as a backend engineer? Accept our challenge and impress us :)
