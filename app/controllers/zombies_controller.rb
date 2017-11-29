@@ -1,5 +1,6 @@
 class ZombiesController < ApplicationController
   def index
+    @zombie = Zombie.find(params[:id])
   end
 
   def new
