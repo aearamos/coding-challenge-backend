@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+class PagesController < ApplicationController::Base
 
   def index
   end
