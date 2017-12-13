@@ -13,9 +13,8 @@ class Zombie < ApplicationRecord
   validates :hit_points, presence: :true
   validates :brains_eaten, presence: :true
 
-  #include PgSearch
-  #pg_search_scope :quick_search,
-   #against: [:name, :hit_points, :speed, :brains_eaten, :turn_date],
+
+   #against: [:name, :hit_points, :speed, :brains_eaten, :turn_date]
    #associated_against: {
    # armor: [:name, :defense_points, :durability, :price],
    # weapon: [:name, :attack_points, :durability, :price]
