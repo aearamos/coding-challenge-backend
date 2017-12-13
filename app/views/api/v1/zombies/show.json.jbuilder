@@ -1,0 +1,2 @@
+json.extract! @zombie, :name
+

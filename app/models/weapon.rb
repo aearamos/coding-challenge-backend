@@ -1,3 +1,3 @@
 class Weapon < ApplicationRecord
-  has_many :zombie_weapon
+  has_many :zombie_weapons
 end

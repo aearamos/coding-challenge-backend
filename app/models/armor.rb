@@ -1,3 +1,3 @@
 class Armor < ApplicationRecord
-  has_many :zombie_armor
+  has_many :zombie_armors
 end

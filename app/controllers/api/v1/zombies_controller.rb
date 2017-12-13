@@ -7,7 +7,9 @@ class Api::V1::ZombiesController < Api::V1::BaseController
   end
 
   def show
-    render json: @zombie
+    @weapon = @zombie.weapons
+    @armor = @zombie.armors
+    render json: { zombie: @zombie, zombie_weapons: @weapon, zombie_armors: @armor}
   end
 
   def update
@@ -35,6 +37,7 @@ class Api::V1::ZombiesController < Api::V1::BaseController
   def set_zombie
     @zombie = Zombie.find(params[:id])
   end
+
 
   def zombie_params
     params.require(:zombie).permit(:name, :hit_points, :brains_eaten, :speed, :turn_date)
