@@ -12,12 +12,6 @@ class Zombie < ApplicationRecord
   validates :name, presence: :true
   validates :hit_points, presence: :true
   validates :brains_eaten, presence: :true
-
-
-   #against: [:name, :hit_points, :speed, :brains_eaten, :turn_date]
-   #associated_against: {
-   # armor: [:name, :defense_points, :durability, :price],
-   # weapon: [:name, :attack_points, :durability, :price]
-   #}
+  validates :speed, presence: :true
 
 end
